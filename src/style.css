@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Poppins;
+    font-weight: 400;
+    src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 700;
+    src: url("../assets/fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: Jost;
+    font-weight: 400;
+    src: url("../assets/fonts/Jost/static/Jost-Regular.ttf");
+}
+
+@font-face {
+    font-family: Jost;
+    font-weight: 700;
+    src: url("../assets/fonts/Jost/static/Jost-Bold.ttf");
+}
+
+html {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+menu {
+    display: flex;
+    justify-content: space-between;
+}
