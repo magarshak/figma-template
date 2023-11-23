@@ -7,6 +7,9 @@
     --button-basic-color: #2000E7;
     --button-alt-color: #FFFFFF;
     --button-text-color: #FFFFFF;
+
+    --color-space-first: #f4fbff;
+    --color-space-second: #fff7ea;
 }
 
 @font-face {
@@ -57,6 +60,7 @@ body {
     font-weight: 700;
     font-size: 2rem;
     line-height: 2rem;
+    
     color: var(--logo-color);
 }
 
@@ -75,7 +79,11 @@ body {
 }
 
 .menu-item a {
+    font-size: 30px;
+    line-height: 45px;
+
     text-decoration: none;
+    
     color: #686565;
 }
 
@@ -89,16 +97,31 @@ body {
     width: 40%;
 }
 
-.whitespace {
-    width: 100%;
-    height: 200px;
+.welcome-subtitle {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+
+    color: #2000E7;
+}
+
+.welcome-title {
+    font-size: 2rem;
+    line-height: 3rem;
+    
+    color: #2000E7;
 }
 
 .welcome-title span {
     color: #F2BD00;
 }
 
-.welcome-button {
+.welcome-text {
+    color: #383838;
+}
+
+.welcome-button,
+.about-button {
     width: 246px;
     height: 72px;
     border-radius: 10px;
@@ -144,18 +167,61 @@ body {
     background-color: var(--button-basic-color);
 }
 
-.about-me {
-    background-color: rgba(67, 186, 253, 0.06);
+.whitespace {
+    width: 100%;
+    height: 200px;
 }
 
-.my-projects {
-    background-color: rgba(255, 214, 150, 0.2);
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+
+    background-color: var(--color-space-first);
 }
 
-.contact-me {
-    background-color: rgba(67, 186, 253, 0.06);
+.about-text-container {
+    width: 25%;
+}
+
+.about-title {
+    font-size: 2rem;
+    letter-spacing: 0.35em;
+
+    color: #2000E7;
+}
+
+.about-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.about-image-container {
+    margin: -10px;
+}
+
+.projects {
+    background-color: var(--color-space-second);
+}
+
+.projects-images-container ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 15%;
+}
+
+.projects-images-list li {
+    flex: 0 0 33.333333%;
+    list-style: none;
+    margin: 2% auto;
+}
+
+.contact {
+    background-color: var(--color-space-first);
 }
 
 footer {
-    background-color: rgba(255, 214, 150, 0.2)
+    background-color: var(--color-space-second);
 }
